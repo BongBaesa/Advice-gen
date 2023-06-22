@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(215, 23%, 16%);
+}
+
+body {
+    /* background: var(--Dark-Blue); */
+    background-image: url("./images/Rain.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding-inline: 1.6rem;
+}
+
+
+.advice-generator {
+    font-family: 'Manrope', sans-serif;
+    width: 100%;
+    max-width: 54rem;
+    display: grid;
+    grid: max-content 3.2rem / 1fr;
+}
+
+.advice-generator_output{
+    background: var(--Dark-Grayish-Blue);
+    padding: 4rem 2.4rem 6.4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2.4rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    border-radius: 1.5rem;
+}
+
+.advice-generator_advice-number{
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.345714rem;
+    color: var(--Neon-Green);
+}
+
+@media screen and (min-width: 545px){
+    .advice-generator_advice-number{
+        letter-spacing: 0.408571rem;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+}
+
+.advice-generator_quotes{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    letter-spacing: -0.0257143rem;
+    color: #cee3e9;
+}
+
+@media screen and (min-width: 545px){
+    .advice-generator_quotes{
+        margin-bottom: 1.6rem;
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+        letter-spacing: -0.03rem;
+    }
+}
+
+.advice-generator_divider{
+    display: flex;
+    width: 100%;
+} 
+
+picture > img {
+    margin: auto;
+    width: 100%;
+}
+
+.advice-generator_btn{
+    width: 5rem;
+    height: 5rem;
+    background: var(--Neon-Green);
+    border-radius: 50%;
+    border: none;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    place-self: end center;
+    transition: box-shadow 250ms;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.advice-generator_btn:is(:hover){
+    box-shadow: 0px 0px 20px #53ffaa;
+}
+
+.advice-generator_btn-img{
+    transition: transform 250ms;
+}
+
+.advice-generator_btn:is(:hover) > img{
+    transform: rotate(135deg);
+}
