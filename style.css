@@ -20,7 +20,7 @@
 
 body {
     /* background: var(--Dark-Blue); */
-    background-image: url("./images/Rain.gif");
+    background-image: url("./images/Day.gif");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
