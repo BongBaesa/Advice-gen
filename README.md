@@ -5,7 +5,7 @@
 ## 🚀 How to Use:
 - Click the button for a new piece of advice!
 
-🛠️ Tools Used:
+## 🛠️ Tools Used:
 
 - **JavaScript**: Handles the logic, fetches data from the Advice Slip API, and updates the DOM with the random advice.
 
